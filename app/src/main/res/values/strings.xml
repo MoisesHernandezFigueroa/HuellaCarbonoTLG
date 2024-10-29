@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">HuellaCarbono2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="yes_no_options">
+        <item>Sí</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="water_heater_types">
+        <item>Gas</item>
+        <item>Eléctrico</item>
+        <item>Solar</item>
+        <item>No tengo</item>
+    </string-array>
+
+    <string-array name="oven_types">
+        <item>Gas</item>
+        <item>Eléctrico</item>
+        <item>Microondas</item>
+        <item>No tengo</item>
+    </string-array>
+
+    <string-array name="transport_types">
+        <item>Auto propio</item>
+        <item>Taxi</item>
+        <item>Motocicleta</item>
+        <item>Camión</item>
+        <item>Metrobús</item>
+        <item>Bicicleta</item>
+    </string-array>
+
+    <string-array name="hobby_options">
+        <item>Videojuegos</item>
+        <item>Senderismo</item>
+        <item>Gimnasio</item>
+        <item>Carreras de autos</item>
+        <item>Otro, sin consumo de electricidad</item>
+        <item>Otro, con consumo medio de electricidad</item>
+        <item>Otro, con consumo alto de electricidad</item>
+    </string-array>
+
+</resources>

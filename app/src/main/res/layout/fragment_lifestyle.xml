@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Descripción de la Huella de Estilo de Vida -->
+        <TextView
+            android:id="@+id/tvLifestyleFootprintDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La huella en tu estilo de vida se hace de varias maneras, sin embargo, la manera más simple es mediante los hobbies y mediante las costumbres alimenticias que se tengan."
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Selector del hobby -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es tu hobby principal?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spHobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/hobby_options"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Entrada numérica para horas de hobby por semana -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuántas horas a la semana dedicas a tu hobby?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etHobbyHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Horas por semana"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Entrada numérica para consumo de refresco -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuántos litros de refresco consumes por semana?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etSodaConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Litros por semana"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Entrada numérica para consumo de alcohol -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuántos litros de alcohol consumes por semana?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAlcoholConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Litros por semana"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Entrada numérica para consumo de carne -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuántos kilos de carne consumes por semana?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etMeatConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Kilos por semana"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:backgroundTint="#975BD3"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

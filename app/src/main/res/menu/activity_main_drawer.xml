@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_day"
+            android:title="Introduccion"  />
+    </group>
+
+    <item android:title="Calculadoras">
+        <menu>
+            <item android:id="@+id/nav_familiar"
+                android:icon="@android:drawable/ic_popup_sync"
+                android:title="En entorno familiar" />
+            <item android:id="@+id/nav_transport"
+                android:icon="@android:drawable/ic_input_get"
+                android:title="En el transporte" />
+            <item android:id="@+id/nav_lifestyle"
+                android:icon="@android:drawable/ic_input_get"
+                android:title="En estilo de vida" />
+        </menu>
+    </item>
+</menu>

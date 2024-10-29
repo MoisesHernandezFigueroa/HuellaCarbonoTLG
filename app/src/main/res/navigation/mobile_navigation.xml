@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.huellacarbono2.ui.view.HomeFragment"
+        android:label="Introduccion"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_familiar"
+        android:name="com.example.huellacarbono2.ui.view.FamiliarFragment"
+        android:label="En el entorno familiar"
+        tools:layout="@layout/fragment_familiar" >
+        <action
+            android:id="@+id/action_nav_familiar_to_nav_result"
+            app:destination="@id/nav_result" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transport"
+        android:name="com.example.huellacarbono2.ui.view.TransportFragment"
+        android:label="En el transporte"
+        tools:layout="@layout/fragment_transport" >
+        <action
+            android:id="@+id/action_nav_transport_to_nav_result"
+            app:destination="@id/nav_result" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lifestyle"
+        android:name="com.example.huellacarbono2.ui.view.LifestyleFragment"
+        android:label="En tu estilo de vida"
+        tools:layout="@layout/fragment_lifestyle" >
+        <action
+            android:id="@+id/action_nav_lifestyle_to_nav_result"
+            app:destination="@id/nav_result" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="com.example.huellacarbono2.ui.view.ResultFragment"
+        android:label="Resultado"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_nav_result_to_nav_home"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="result"
+            app:argType="float"
+            android:defaultValue="0.0" />
+    </fragment>
+</navigation>

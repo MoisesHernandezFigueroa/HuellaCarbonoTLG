@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Descripción de la Huella Familiar -->
+        <TextView
+            android:id="@+id/tvFamilyFootprintDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La huella familiar se calcula tomando en cuenta el consumo de energía de las personas que viven en tu casa."
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Entrada numérica para la cantidad de personas en la casa -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuántas personas viven en tu casa?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNumPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Número de personas"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta sobre los focos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuántos focos hay en tu casa?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNumLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Número de focos"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta sobre la bomba de agua -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Tienen bomba de agua?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spWaterPump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/yes_no_options"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta sobre el calentador de agua -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué tipo de calentador de agua tienen?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spWaterHeaterType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/water_heater_types"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta sobre el tipo de horno -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué tipo de horno tienen?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spOvenType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/oven_types"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta sobre la cantidad de televisores -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuántas televisiones hay en casa?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNumTVs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Número de televisores"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:backgroundTint="#975BD3"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

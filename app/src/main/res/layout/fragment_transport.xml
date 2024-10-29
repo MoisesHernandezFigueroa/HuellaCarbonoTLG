@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- Descripción de la Huella de Transporte -->
+    <TextView
+        android:id="@+id/tvTransportFootprintDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La huella en el transporte se calcula en base a la cantidad de horas usando el medio de transporte en una semana y el tipo de transporte que se usa."
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Entrada numérica para horas de uso del transporte -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuántas horas usas el medio de transporte a la semana?"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+            android:id="@+id/etHoursTransport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Número de horas"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Selector del tipo de transporte -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué tipo de transporte usas?"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spTransportType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/transport_types"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#975BD3"
+        android:padding="12dp"
+        android:text="Calcular"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

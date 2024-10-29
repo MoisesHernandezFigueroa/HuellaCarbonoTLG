@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Texto descriptivo del resultado -->
+    <TextView
+        android:id="@+id/tvResultDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu huella de carbono es de:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Indicador del resultado de la huella de carbono -->
+    <TextView
+        android:id="@+id/tvCarbonFootprintResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00 Toneladas de CO2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:textAlignment="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú Principal"
+        android:backgroundTint="#975BD3"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
